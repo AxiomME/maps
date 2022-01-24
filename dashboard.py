@@ -8,6 +8,8 @@ import numpy as np
 import datetime
 import plotly.express as px
 
+maxUploadSize = 200
+
 st.set_page_config(layout="wide")
 
 #import des données
@@ -22,6 +24,8 @@ def load_data():
 	
 	
 def main():	
+	
+	st.title('Number of security incident per country over the last 3 years')
 	
 	data,gj=load_data()
 	
